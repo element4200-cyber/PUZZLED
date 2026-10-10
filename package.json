@@ -1,0 +1,1 @@
+{"name":"puzzled","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/prelaunch.test.mjs"},"dependencies":{"@pump-fun/pump-sdk":"latest","@solana/web3.js":"^1.98.4","buffer":"^6.0.3"},"devDependencies":{"esbuild":"^0.25.0","esbuild-plugin-polyfill-node":"^0.3.0"}}
