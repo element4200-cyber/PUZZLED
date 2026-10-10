@@ -1,0 +1,39 @@
+.puzzled-intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,#fff0c4 0,transparent 65%),radial-gradient(#191a1725 .8px,transparent .8px),#fffefa;background-size:auto,23px 23px;animation:intro-exit .55s 4.85s both}
+.intro-content{text-align:center;width:100%;padding:24px;animation:intro-arrive .5s both}
+.intro-kicker{font:700 10px 'DM Sans',Arial;letter-spacing:3px;display:block}
+.intro-logo{display:block;width:min(92vw,850px);height:min(72vh,620px);margin:-16px auto -60px;overflow:visible;filter:drop-shadow(0 12px 0 #191a1714)}
+.intro-piece{transform-box:view-box;transform-origin:120px 120px;animation:intro-connect 1.65s var(--delay) cubic-bezier(.22,1,.36,1) both}
+.intro-whole{opacity:0;animation:intro-whole-in .15s 2.5s both}
+.intro-seam{animation:intro-seam-out .45s 2.1s both}
+.intro-assembled{transform-origin:120px 112px;animation:intro-celebrate .8s 3.5s both}
+.intro-open-eye{transform-origin:140px 93px;animation:intro-eye 4.6s both}
+.intro-wink-eye{opacity:0;animation:intro-wink 4.6s both}
+.intro-mouth{animation:intro-smile .5s 3.15s both}
+.intro-cheek{animation:intro-blush .6s 3.15s both}
+.intro-wordmark{font:700 clamp(42px,7vw,76px)/1 'Space Grotesk',Arial;letter-spacing:-4px;position:relative;display:inline-block}
+.intro-wordmark span{font:700 13px Arial;position:absolute;right:-15px;top:8px;letter-spacing:0}
+.intro-content p{font:500 14px 'DM Sans',Arial;color:#74756b;margin:16px 0 0}
+.intro-skip{position:absolute;right:28px;top:24px;z-index:1;border:1.5px solid #191a17;border-radius:9px;padding:11px 15px;background:#fffefa;font-size:11px;font-weight:700;box-shadow:2px 3px 0 #191a17}
+.hero-mascot{width:260px;height:260px;margin:22px auto 0}
+.intro-replay{display:block;margin:-20px auto 20px;border:0;border-bottom:1px solid #b8b7ac;background:transparent;color:#74756b;padding:0 0 4px;font-size:10px;font-weight:700}
+.launch-bar{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:10px 4.5%;border-bottom:2px solid var(--ink);background:#f5f3e9;min-height:60px}
+.pump-link{display:inline-flex;align-items:center;gap:9px;font:700 11px 'DM Sans',Arial;white-space:nowrap}
+.pump-pill{display:inline-block;width:21px;height:11px;border:1.5px solid var(--ink);border-radius:10px;transform:rotate(-38deg);background:linear-gradient(90deg,#9fdbab 50%,white 50%)}
+.ca-spot{display:flex;gap:10px;align-items:center;justify-content:center;font-size:11px;min-width:0}
+.ca-spot b{font:700 10px monospace;letter-spacing:1px;background:var(--yellow);border:1.5px solid var(--ink);border-radius:7px;padding:5px 8px}
+.ca-spot span{color:#797b6d;font-family:monospace}
+.top-wallet{min-height:36px;padding:7px 15px;font-size:11px;gap:10px;white-space:nowrap;background:var(--green)}
+.top-wallet:before{width:13px;height:8px;top:-8px;left:16px}
+.top-wallet:after{width:8px;height:14px;top:calc(50% - 7px);background:#f5f3e9}
+@keyframes intro-whole-in{to{opacity:1}}
+@keyframes intro-connect{0%,12%{transform:translate(var(--dx),var(--dy)) rotate(var(--turn));opacity:0}26%{opacity:1}100%{transform:translate(0,0) rotate(0);opacity:1}}
+@keyframes intro-seam-out{to{opacity:0}}
+@keyframes intro-eye{0%,56%,72%,100%{transform:scaleY(1)}60%,68%{transform:scaleY(0)}}
+@keyframes intro-wink{0%,57%,71%,100%{opacity:0}60%,68%{opacity:1}}
+@keyframes intro-smile{from{d:path('M97 119Q112 119 128 119')}to{d:path('M97 116Q112 140 128 116')}}
+@keyframes intro-blush{from{opacity:.5}to{opacity:1}}
+@keyframes intro-celebrate{0%,100%{transform:rotate(0) translateY(0)}45%{transform:rotate(-7deg) translateY(-8px)}75%{transform:rotate(3deg) translateY(-2px)}}
+@keyframes intro-arrive{from{opacity:0}to{opacity:1}}
+@keyframes intro-exit{to{opacity:0;visibility:hidden}}
+@media(max-width:600px){.intro-logo{width:96vw;height:52vh;margin:0 auto -38px}.intro-content{padding:20px 8px}.intro-skip{top:18px;right:18px}.intro-kicker{font-size:8px;letter-spacing:2px}.hero-mascot{width:220px;height:220px}.launch-bar{padding:10px 18px;gap:12px;flex-wrap:wrap}.ca-spot{order:3;flex:0 0 100%;border-top:1px dashed #cdccbf;padding-top:9px}.top-wallet{font-size:10px}.pump-link{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.puzzled-intro,.intro-content,.intro-piece,.intro-seam,.intro-assembled,.intro-open-eye,.intro-wink-eye,.intro-mouth,.intro-cheek,.intro-whole{animation:none}.intro-whole{opacity:1}.intro-seam{opacity:0}.intro-mouth{d:path('M97 116Q112 140 128 116')}.ticker-track{animation:none}html{scroll-behavior:auto}}
