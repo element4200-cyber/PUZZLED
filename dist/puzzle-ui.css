@@ -1,0 +1,14 @@
+.button{position:relative;overflow:visible;padding-right:29px}
+.button:before{content:'';position:absolute;top:-10px;left:22px;width:17px;height:10px;border:2px solid var(--ink);border-bottom:0;border-radius:13px 13px 0 0;background:inherit}
+.button:after{content:'';position:absolute;top:calc(50% - 9px);right:-2px;width:10px;height:18px;border:2px solid var(--ink);border-right:0;border-radius:12px 0 0 12px;background:var(--paper)}
+.cta .button:after{background:var(--yellow)}
+.builder-sidebar,.build-preview,.form-panel,.coin-preview,.assembly{position:relative}
+.builder-sidebar:before,.build-preview:before,.form-panel:before,.coin-preview:before{content:'';position:absolute;left:32px;top:-13px;width:23px;height:13px;border:2px solid var(--ink);border-bottom:0;border-radius:16px 16px 0 0;background:inherit}
+.builder-sidebar,.build-preview,.form-panel,.coin-preview{margin-top:8px}
+.assembly:before{content:'';position:absolute;top:-2px;right:27px;width:29px;height:15px;border:2px solid var(--ink);border-top:0;border-radius:0 0 18px 18px;background:var(--paper)}
+.count-picker button{position:relative}
+.count-picker button:after{content:'';position:absolute;bottom:-1px;left:calc(50% - 7px);width:14px;height:7px;border:1px solid #d2d2c6;border-bottom:0;border-radius:8px 8px 0 0;background:#fff}
+.count-picker button.selected:after{border:1.5px solid var(--ink);border-bottom:0;bottom:-2px}
+.behavior-list{scroll-margin-top:20px}
+.builder-main .filter-row{margin:25px 0 -10px;gap:5px}
+.builder-main .filter-row .chip{padding:7px 9px;font-size:9px}
